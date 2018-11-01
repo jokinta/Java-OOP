@@ -23,7 +23,7 @@ public class Book {
     }
 
     private void setAutohor(String autohor){
-        String[] authorTokens = autohor.split("\\s+")
+        String[] authorTokens = autohor.split("\\s+");
         if(authorTokens.length == 2 && Character.isDigit(authorTokens[1].charAt(0))){
             throw new IllegalArgumentException(INVALID_AUTHOR);
         }
